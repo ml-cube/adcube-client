@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "poetry>=1.1.5",]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "adcube-client"
+version = "0.0.1"
+authors = [ "MLcube",]
+description = "AD cube API client"
+license = "GNU GPL v3.0"
+readme = "README.md"
+classifiers = [ "Private :: Do not Upload",]
+[[tool.poetry.packages]]
+include = "client"
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.10"
+websockets = "^10.1"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.extras]
